@@ -259,3 +259,17 @@ cc_library_shared {
     defaults: ["minigbm_cros_gralloc0_defaults"],
     shared_libs: ["libminigbm_gralloc_arcvm"],
 }
+
+// Rockchip
+cc_library_shared {
+    name: "libminigbm_gralloc_rockchip",
+    defaults: ["minigbm_cros_gralloc_library_defaults"],
+    cflags: ["-DDRV_ROCKCHIP"],
+    include_dirs: ["external/minigbm/include/rockchip"],
+}
+
+cc_library_shared {
+    name: "gralloc.minigbm_rockchip",
+    defaults: ["minigbm_cros_gralloc0_defaults"],
+    shared_libs: ["libminigbm_gralloc_rockchip"],
+}
