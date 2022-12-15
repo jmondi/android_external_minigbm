@@ -264,7 +264,6 @@ cc_library_shared {
 cc_library_shared {
     name: "libminigbm_gralloc_rockchip",
     defaults: ["minigbm_cros_gralloc_library_defaults"],
-    cflags: ["-DDRV_ROCKCHIP"],
     include_dirs: ["external/minigbm/include/rockchip"],
 }
 
